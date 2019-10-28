@@ -21,7 +21,7 @@ spring:
   driverClassName: com.mysql.jdbc.Driver
   url: jdbc:mysql://127.0.0.1:3306/clouddb01?useUnicode=true&characterEncoding=utf8
   username: root
-  password: root
+  password: pass
   initialSize: 5
   minIdle: 5
   maxActive: 5
@@ -41,9 +41,9 @@ eureka:
  
 info: 
  app.name: learn-microservicecloud-config-dept-dev
- company.name: www.learn.com
- build.artifactId: $project.artifactId$
- build.version: $project.version$
+ company.name: www.bd.com
+ build.artifactId: ${project.artifactId}
+ build.version: ${project.version}
  
 ---
 
@@ -64,7 +64,7 @@ spring:
   driverClassName: com.mysql.jdbc.Driver
   url: jdbc:mysql://127.0.0.1:3306/clouddb02?useUnicode=true&characterEncoding=utf8
   username: root
-  password: root
+  password: pass
   initialSize: 5
   minIdle: 5
   maxActive: 5
@@ -84,6 +84,6 @@ eureka:
  
 info: 
  app.name: learn-microservicecloud-config-test
- company.name: www.learn.com
- build.artifactId: $project.artifactId$
- build.version: $project.version$
+ company.name: www.bd.com
+ build.artifactId: ${project.artifactId}
+ build.version: ${project.version}
